@@ -118,8 +118,6 @@ class mmKyber:
         return  k
     """
 
-    #   NOTE! This is the alternative implementation of mmDecap:
-
     def mmDecap(self, pp, sk, ct):
         """ mmDecap(pp, sk, ct): Decapsulate *without* NTT. """
 
@@ -137,7 +135,7 @@ class mmKyber:
         ui,_ = poly_deserial(ui, 1)
 
         #   w := <c',s> mod 2^u_i
-        w   = [0] * self.d
+        w   = poly_zero()
         for i in range(self.m):
             poly_mul1_add(w, u[i], s[i])
 
@@ -339,7 +337,7 @@ class mmKyber:
         v   = poly_decompress(v, self.dv, 2**self.du)
 
         #   m := [ u' - <u,s> mod 2^d_u ]_2
-        m   = [0] * self.d
+        m   = poly_zero()
         for i in range(self.m):
             poly_mul1_add(m, u[i], s[i])
         m   =   [ (v[i] - m[i]) % 2**self.du  for i in range(256) ]

@@ -1,4 +1,4 @@
-#   refKyber-c
+#	refKyber-c
 
 This is the benchmark code used for "apples-to-apples" comparison between
 plain C implementations of Kyber and mmKyber.
@@ -11,13 +11,13 @@ creates a text file `bench.txt`.
 ```
 
 For purposes of reporting, the function names in the Kyber implementation
-have been mapped to the ML-KEM (CCA) and K-PKE (CPA) names from
+have been mapped to the ML-KEM (CCA) and K-PKE (CPA) names from 
 [FIPS 203](https://doi.org/10.6028/NIST.FIPS.203).
 
 
-##  Reference Kyber code
+##	Reference Kyber code
 
-The `kyber` symbolic link should point to the official
+The `kyber` symbolic link should point to the official 
 [reference implementation](https://github.com/pq-crystals/kyber) of
 Kyber from the Kyber design team. This code was tested against the
 commit `10b478f` from August 21, 2024 (after FIPS 203 came out.)

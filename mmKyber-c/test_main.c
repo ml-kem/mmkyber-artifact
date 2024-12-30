@@ -14,6 +14,14 @@
 #include "mmkyber.h"
 #include "mm_param.h"
 
+#ifndef MM_N_MAX
+#define MM_N_MAX 1024
+#endif
+
+#ifndef MM_REP_TOT
+#define MM_REP_TOT 10240
+#endif
+
 //  used for debug stuff
 
 void dbg_hex(const void *b, size_t b_sz, const char *lab)
@@ -57,8 +65,6 @@ static double get_sec()
     gettimeofday(&tv, NULL);
     return ((double) tv.tv_sec) + 1E-6*((double) tv.tv_usec);
 }
-
-#define MM_N_MAX 1024
 
 int main()
 {
@@ -105,7 +111,11 @@ int main()
     seed = random();
 
     //  nn recipients loop
+#ifdef  MM_SET_N
+    nn  =   MM_SET_N; {                     //  set specific N
+#else
     for (nn = 1; nn <= 1024; nn *= 2) {
+#endif
 
     for (i = 0; i < 16; i++) {
         seed_a[i] = random();
@@ -115,7 +125,7 @@ int main()
         seed_e[i] = random();
     }
 
-    rep =   102400/nn;
+    rep =   MM_REP_TOT / nn;
 
 #endif
 

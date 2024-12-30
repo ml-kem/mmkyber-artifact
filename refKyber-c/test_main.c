@@ -11,7 +11,13 @@
 #include "kem.h"
 #include "indcpa.h"
 
+#ifndef MM_N_MAX
 #define MM_N_MAX 1024
+#endif
+
+#ifndef MM_REP_TOT
+#define MM_REP_TOT 10240
+#endif
 
 static double get_sec()
 {
@@ -54,8 +60,11 @@ int main()
     srandom(seed);
     seed    = random();
 
-    //  nn recipients loop
+#ifdef  MM_SET_N
+    nn  =   MM_SET_N; {                     //  set specific N
+#else
     for (nn = 1; nn <= 1024; nn *= 2) {
+#endif
 
     printf( "%16s  %16s  N= %4d  len= %9d\n",
             algn, "ciphertext", nn, (int) ct_sz * nn);
@@ -68,7 +77,7 @@ int main()
         seed_r[i]       = random();     //  encrypt r
     }
 
-    rep     = 10240/nn;
+    rep     = MM_REP_TOT / nn;
 
     //  --- key gen speed
     dd  = get_sec();
