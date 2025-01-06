@@ -3,163 +3,163 @@ PoK of s: As-t=0, s in {-1,0,+1}
 === test vector 0
 pk[3200] chk 4d407a9c
 sk[208] chk 8baed64e
-create proof ... [OK] proof: 26489 bytes. Time: 0.088896 sec.
-verify proof ... [OK] Time: 0.039435 sec.
+create proof ... [OK] proof: 26480 bytes. Time: 0.080658 sec.
+verify proof ... [OK] Time: 0.039900 sec.
 === test vector 1
 pk[3200] chk 11db2cef
 sk[208] chk d6aaf64c
-create proof ... [OK] proof: 26457 bytes. Time: 0.071261 sec.
-verify proof ... [OK] Time: 0.056551 sec.
+create proof ... [OK] proof: 26483 bytes. Time: 0.055849 sec.
+verify proof ... [OK] Time: 0.042184 sec.
 === test vector 2
 pk[3200] chk 1ed9c317
 sk[208] chk 3fec0f48
-create proof ... [OK] proof: 26489 bytes. Time: 0.121496 sec.
-verify proof ... [OK] Time: 0.040398 sec.
+create proof ... [OK] proof: 26482 bytes. Time: 0.068667 sec.
+verify proof ... [OK] Time: 0.059963 sec.
 === test vector 3
 pk[3200] chk 6ef1cf31
 sk[208] chk 092c360c
-create proof ... [OK] proof: 26482 bytes. Time: 0.050941 sec.
-verify proof ... [OK] Time: 0.040120 sec.
+create proof ... [OK] proof: 26473 bytes. Time: 0.051297 sec.
+verify proof ... [OK] Time: 0.040817 sec.
 === test vector 4
 pk[3200] chk 5b4e84c7
 sk[208] chk 68b427d2
-create proof ... [OK] proof: 26471 bytes. Time: 0.051198 sec.
-verify proof ... [OK] Time: 0.040623 sec.
+create proof ... [OK] proof: 26475 bytes. Time: 0.061595 sec.
+verify proof ... [OK] Time: 0.040640 sec.
 === test vector 5
 pk[3200] chk 5a57d67d
 sk[208] chk 57766e69
-create proof ... [OK] proof: 26484 bytes. Time: 0.096787 sec.
-verify proof ... [OK] Time: 0.040463 sec.
+create proof ... [OK] proof: 26489 bytes. Time: 0.125687 sec.
+verify proof ... [OK] Time: 0.040613 sec.
 === test vector 6
 pk[3200] chk 9700a166
 sk[208] chk 24badabb
-create proof ... [OK] proof: 26474 bytes. Time: 0.062114 sec.
-verify proof ... [OK] Time: 0.040262 sec.
+create proof ... [OK] proof: 26474 bytes. Time: 0.068970 sec.
+verify proof ... [OK] Time: 0.040706 sec.
 === test vector 7
 pk[3200] chk 72b67fc4
 sk[208] chk 271ba26e
-create proof ... [OK] proof: 26487 bytes. Time: 0.068287 sec.
-verify proof ... [OK] Time: 0.040368 sec.
+create proof ... [OK] proof: 26475 bytes. Time: 0.087709 sec.
+verify proof ... [OK] Time: 0.040462 sec.
 === test vector 8
 pk[3200] chk 76ad6057
 sk[208] chk 00bbe64f
-create proof ... [OK] proof: 26462 bytes. Time: 0.082748 sec.
-verify proof ... [OK] Time: 0.042649 sec.
+create proof ... [OK] proof: 26487 bytes. Time: 0.064517 sec.
+verify proof ... [OK] Time: 0.046393 sec.
 === test vector 9
 pk[3200] chk 5b4bfe01
 sk[208] chk 86de8a2a
-create proof ... [OK] proof: 26477 bytes. Time: 0.111016 sec.
-verify proof ... [OK] Time: 0.053952 sec.
-mmKyber-KEM-128 avg. zk proof size: 26477 bytes.
-mmKyber-KEM-128 avg. zk proof gen time: 0.080474 sec.
-mmKyber-KEM-128 avg. zk proof vfy time: 0.043482 sec.
+create proof ... [OK] proof: 26486 bytes. Time: 0.076156 sec.
+verify proof ... [OK] Time: 0.040633 sec.
+mmKyber-KEM-128 avg. zk proof size: 26480 bytes.
+mmKyber-KEM-128 avg. zk proof gen time: 0.074110 sec.
+mmKyber-KEM-128 avg. zk proof vfy time: 0.043231 sec.
 mmKyber-KEM-192: (m=7, n=7, du=15, dv=2, sig0=15.900000, sig1=488797.360000)
 PoK of s: As-t=0, s in {-1,0,+1}
 === test vector 0
 pk[5600] chk ccc769c6
 sk[224] chk 079dab2d
-create proof ... [OK] proof: 25259 bytes. Time: 0.089879 sec.
-verify proof ... [OK] Time: 0.041404 sec.
+create proof ... [OK] proof: 25261 bytes. Time: 0.078437 sec.
+verify proof ... [OK] Time: 0.041236 sec.
 === test vector 1
 pk[5600] chk a2f698c1
 sk[224] chk 008a9663
-create proof ... [OK] proof: 25273 bytes. Time: 0.055405 sec.
-verify proof ... [OK] Time: 0.041262 sec.
+create proof ... [OK] proof: 25241 bytes. Time: 0.058732 sec.
+verify proof ... [OK] Time: 0.042362 sec.
 === test vector 2
 pk[5600] chk e449682b
 sk[224] chk ca99d7e0
-create proof ... [OK] proof: 25269 bytes. Time: 0.062472 sec.
-verify proof ... [OK] Time: 0.047668 sec.
+create proof ... [OK] proof: 25280 bytes. Time: 0.083733 sec.
+verify proof ... [OK] Time: 0.041494 sec.
 === test vector 3
 pk[5600] chk 352f025b
 sk[224] chk e1018e8d
-create proof ... [OK] proof: 25250 bytes. Time: 0.088702 sec.
-verify proof ... [OK] Time: 0.041057 sec.
+create proof ... [OK] proof: 25268 bytes. Time: 0.104080 sec.
+verify proof ... [OK] Time: 0.047845 sec.
 === test vector 4
 pk[5600] chk 9be8321c
 sk[224] chk b3876464
-create proof ... [OK] proof: 25265 bytes. Time: 0.097560 sec.
-verify proof ... [OK] Time: 0.041976 sec.
+create proof ... [OK] proof: 25260 bytes. Time: 0.053315 sec.
+verify proof ... [OK] Time: 0.041987 sec.
 === test vector 5
 pk[5600] chk ae15676d
 sk[224] chk 4d5291da
-create proof ... [OK] proof: 25238 bytes. Time: 0.083136 sec.
-verify proof ... [OK] Time: 0.041896 sec.
+create proof ... [OK] proof: 25267 bytes. Time: 0.068652 sec.
+verify proof ... [OK] Time: 0.041824 sec.
 === test vector 6
 pk[5600] chk 55ebd3fb
 sk[224] chk 677731ea
-create proof ... [OK] proof: 25248 bytes. Time: 0.056311 sec.
-verify proof ... [OK] Time: 0.041909 sec.
+create proof ... [OK] proof: 25264 bytes. Time: 0.095145 sec.
+verify proof ... [OK] Time: 0.041320 sec.
 === test vector 7
 pk[5600] chk ee1a46e8
 sk[224] chk 4bef200d
-create proof ... [OK] proof: 25269 bytes. Time: 0.076119 sec.
-verify proof ... [OK] Time: 0.041896 sec.
+create proof ... [OK] proof: 25267 bytes. Time: 0.096372 sec.
+verify proof ... [OK] Time: 0.043814 sec.
 === test vector 8
 pk[5600] chk 977f2efd
 sk[224] chk 340d6bfa
-create proof ... [OK] proof: 25260 bytes. Time: 0.089940 sec.
-verify proof ... [OK] Time: 0.054226 sec.
+create proof ... [OK] proof: 25264 bytes. Time: 0.067817 sec.
+verify proof ... [OK] Time: 0.042491 sec.
 === test vector 9
 pk[5600] chk d2669fc8
 sk[224] chk 2fb46eb8
-create proof ... [OK] proof: 25273 bytes. Time: 0.087018 sec.
-verify proof ... [OK] Time: 0.042033 sec.
-mmKyber-KEM-192 avg. zk proof size: 25260 bytes.
-mmKyber-KEM-192 avg. zk proof gen time: 0.078654 sec.
-mmKyber-KEM-192 avg. zk proof vfy time: 0.043533 sec.
+create proof ... [OK] proof: 25250 bytes. Time: 0.075531 sec.
+verify proof ... [OK] Time: 0.058515 sec.
+mmKyber-KEM-192 avg. zk proof size: 25262 bytes.
+mmKyber-KEM-192 avg. zk proof gen time: 0.078181 sec.
+mmKyber-KEM-192 avg. zk proof vfy time: 0.044289 sec.
 mmKyber-KEM-256: (m=9, n=9, du=16, dv=2, sig0=15.900000, sig1=554941.070000)
 PoK of s: As-t=0, s in {-1,0,+1}
 === test vector 0
 pk[7200] chk 416af26c
 sk[288] chk 0bc89fd4
-create proof ... [OK] proof: 28043 bytes. Time: 0.087359 sec.
-verify proof ... [OK] Time: 0.057531 sec.
+create proof ... [OK] proof: 28030 bytes. Time: 0.090367 sec.
+verify proof ... [OK] Time: 0.057628 sec.
 === test vector 1
 pk[7200] chk 33bc82f0
 sk[288] chk 0b4ffbf0
-create proof ... [OK] proof: 28024 bytes. Time: 0.070098 sec.
-verify proof ... [OK] Time: 0.056261 sec.
+create proof ... [OK] proof: 28029 bytes. Time: 0.071363 sec.
+verify proof ... [OK] Time: 0.057056 sec.
 === test vector 2
 pk[7200] chk 98f00afd
 sk[288] chk 46c05302
-create proof ... [OK] proof: 28047 bytes. Time: 0.071061 sec.
-verify proof ... [OK] Time: 0.056338 sec.
+create proof ... [OK] proof: 28041 bytes. Time: 0.083148 sec.
+verify proof ... [OK] Time: 0.057742 sec.
 === test vector 3
 pk[7200] chk 3b464f1d
 sk[288] chk b87b4665
-create proof ... [OK] proof: 28017 bytes. Time: 0.161325 sec.
-verify proof ... [OK] Time: 0.056123 sec.
+create proof ... [OK] proof: 28021 bytes. Time: 0.161042 sec.
+verify proof ... [OK] Time: 0.056013 sec.
 === test vector 4
 pk[7200] chk a5957208
 sk[288] chk 988d6f3e
-create proof ... [OK] proof: 28016 bytes. Time: 0.070980 sec.
-verify proof ... [OK] Time: 0.056885 sec.
+create proof ... [OK] proof: 28034 bytes. Time: 0.098481 sec.
+verify proof ... [OK] Time: 0.058882 sec.
 === test vector 5
 pk[7200] chk c5204850
 sk[288] chk 745deca6
-create proof ... [OK] proof: 28004 bytes. Time: 0.097973 sec.
-verify proof ... [OK] Time: 0.072245 sec.
+create proof ... [OK] proof: 28021 bytes. Time: 0.132112 sec.
+verify proof ... [OK] Time: 0.056325 sec.
 === test vector 6
 pk[7200] chk 9e179838
 sk[288] chk 1d2c47d5
-create proof ... [OK] proof: 28026 bytes. Time: 0.152942 sec.
-verify proof ... [OK] Time: 0.056831 sec.
+create proof ... [OK] proof: 28021 bytes. Time: 0.120688 sec.
+verify proof ... [OK] Time: 0.056202 sec.
 === test vector 7
 pk[7200] chk e598e5da
 sk[288] chk aaad3208
-create proof ... [OK] proof: 28041 bytes. Time: 0.135603 sec.
-verify proof ... [OK] Time: 0.056413 sec.
+create proof ... [OK] proof: 28027 bytes. Time: 0.090905 sec.
+verify proof ... [OK] Time: 0.066595 sec.
 === test vector 8
 pk[7200] chk aba89b3a
 sk[288] chk d46e72a0
-create proof ... [OK] proof: 28013 bytes. Time: 0.090283 sec.
-verify proof ... [OK] Time: 0.056376 sec.
+create proof ... [OK] proof: 28000 bytes. Time: 0.141265 sec.
+verify proof ... [OK] Time: 0.055392 sec.
 === test vector 9
 pk[7200] chk 3302730a
 sk[288] chk e01c7259
-create proof ... [OK] proof: 28024 bytes. Time: 0.116073 sec.
-verify proof ... [OK] Time: 0.056217 sec.
-mmKyber-KEM-256 avg. zk proof size: 28025 bytes.
-mmKyber-KEM-256 avg. zk proof gen time: 0.105370 sec.
-mmKyber-KEM-256 avg. zk proof vfy time: 0.058122 sec.
+create proof ... [OK] proof: 28015 bytes. Time: 0.081289 sec.
+verify proof ... [OK] Time: 0.055364 sec.
+mmKyber-KEM-256 avg. zk proof size: 28023 bytes.
+mmKyber-KEM-256 avg. zk proof gen time: 0.107066 sec.
+mmKyber-KEM-256 avg. zk proof vfy time: 0.057720 sec.

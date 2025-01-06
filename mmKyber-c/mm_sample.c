@@ -145,18 +145,20 @@ void poly_nu(int32_t *r, const uint8_t *s)
 === IMPORANT NOTICE: This sampler is approximate and not constant-time;
     it is a placeholder implementation. A more appropriate Discrete Gaussian
     sampler is required in practice.
+
+    See comments in mm_sample.py for further explanation.
 */
 
-//  Gaussian sampler
+//  Gaussian sampler. gw = Gaussian width, gw = sqrt(2*Pi)*sigma
 
-void poly_gauss(int32_t *r, sha3_t *kec, double sigma)
+void poly_gauss(int32_t *r, sha3_t *kec, double gw)
 {
     int i;
     double cs2, d63;
     double x, y, w;
     uint8_t h[16] = { 0 };
 
-    cs2 = 1.0 / 6.0 - 2.0 * (sigma * sigma);
+    cs2 = (1.0 / 6.0) - M_1_PI * (gw * gw); //  M_1_PI = 1/Pi
     d63 = ldexp(1.0, -63);
 
     i = 0;

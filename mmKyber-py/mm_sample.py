@@ -53,6 +53,9 @@ def poly_bin(s, d=MM_D):
     it is a placeholder implementation. A more appropriate Discrete Gaussian
     sampler is required in practice.
 
+Firstly we note that "Gaussian width" is related to standard distribution
+by sigma = gw / sqrt(2*Pi).
+
 Rounded Gaussian sampler uses narrower sigma' = sqrt(sigma^2 - 1/12)
 in the continuous sampler to get the desired distribution sigma.
 For intuition, note that 1/12 is the variance of [-0.5, +0.5]
@@ -64,10 +67,14 @@ For a Renyi argument, see Appendix E in https://eprint.iacr.org/2024/184.pdf
     orig    cs2 =   -2 * sigma'^2
     substitute      -2 * (sigma^2 - 1/12)
     simplify        1/6 - 2*sigma^2
+    simplify        1/6 - 2*(gw/sqrt(2*Pi))^2
+                    1/6 - gw^2/Pi
+
 """
 
-def poly_gauss(xof, sigma, d=MM_D):
-    cs2 =   1.0/6.0 - 2.0 * (sigma*sigma)   #   adjust sigma
+def poly_gauss(xof, gw, d=MM_D):
+    """ Discrete gaussian with width gw = sigma/sqrt(2*Pi). """
+    cs2 =   1.0/6.0 - (gw*gw)/math.pi       #   adjust sigma
     d63 =   0.5**63                         #   scaling
     r   =   []
     while len(r) < d:

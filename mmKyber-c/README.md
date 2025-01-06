@@ -24,7 +24,7 @@ Linux 6.12.5-1.
 
 ##  Reproducing benchmarks
 
-A file `bench.txt` is produced by `make test`.
+A file `bench.txt` is produced by `make bench`.
 
 
 ##  Functional testing

@@ -16,7 +16,7 @@ void sample_nu(uint8_t *r, sha3_t *kec);
 //  Decode a nu-distribution polynomial from bytes
 void poly_nu(int32_t *r, const uint8_t *s);
 
-//  Gaussian sampler
-void poly_gauss(int32_t *r, sha3_t *kec, double sigma);
+//  Gaussian sampler. gw = Gaussian width, gw = sqrt(2*Pi)*sigma
+void poly_gauss(int32_t *r, sha3_t *kec, double gw);
 
 #endif

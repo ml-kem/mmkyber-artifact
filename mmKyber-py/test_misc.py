@@ -118,8 +118,8 @@ if (__name__ == "__main__"):
 
     def test_sample():
         xof = SHAKE128.new(b'0')
-        print('poly_gauss():', _stat( poly_gauss, xof, 6.344, 0x100000))
-        print('poly_gauss():', _stat( poly_gauss, xof, 146994.008, 0x100000))
+        print('poly_gauss():', _stat( poly_gauss, xof, 15.90, 0x100000))
+        print('poly_gauss():', _stat( poly_gauss, xof, 368459.34, 0x100000))
 
     def test_compress(dx, test=0):
         n       = 256
