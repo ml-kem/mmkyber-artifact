@@ -20,7 +20,7 @@
 #define MM_PAR      (MM_NAME "-128")
 #define MM_M        4
 #define MM_N        4
-#define MM_DU       14
+#define MM_DU       10
 #define MMPKE_DV    2
 #define MM_NU_BAR   3
 #define MM_SIGMA0   15.90
@@ -31,7 +31,7 @@
 #define MM_PAR      (MM_NAME "-192")
 #define MM_M        7
 #define MM_N        7
-#define MM_DU       15
+#define MM_DU       11
 #define MMPKE_DV    2
 #define MM_NU_BAR   2
 #define MM_SIGMA0   15.90
@@ -43,7 +43,7 @@
 #define MM_PAR      (MM_NAME "-256")
 #define MM_M        9
 #define MM_N        9
-#define MM_DU       16
+#define MM_DU       11
 #define MMPKE_DV    2
 #define MM_NU_BAR   2
 #define MM_SIGMA0   15.90

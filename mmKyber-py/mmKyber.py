@@ -10,7 +10,7 @@ class mmKyber:
 
     #   initialize
     def __init__(self,  sec=128, N=2**10, q=MM_Q, d=256, m=4, n=4,
-                        nu_bar=3, du=14, dv=2,
+                        nu_bar=3, du=10, dv=2,
                         sigma0=15.90, sigma1=368459.34):
 
         self.sec    = sec                   #   security level {128, 192, 256}
@@ -349,11 +349,11 @@ class mmKyber:
 #   paramter sets for various security levels
 
 mmKyber_128 = mmKyber(  sec=128, N=2**10, q=MM_Q, d=256, m=4, n=4,
-                        nu_bar=3, du=14, dv=2, sigma0=15.90, sigma1=368459.34)
+                        nu_bar=3, du=10, dv=2, sigma0=15.90, sigma1=368459.34)
 
 mmKyber_192 = mmKyber(  sec=192, N=2**10, q=MM_Q, d=256, m=7, n=7,
-                        nu_bar=2, du=15, dv=2, sigma0=15.90, sigma1=488797.36)
+                        nu_bar=2, du=11, dv=2, sigma0=15.90, sigma1=488797.36)
 
 mmKyber_256 = mmKyber(  sec=256, N=2**10, q=MM_Q, d=256, m=9, n=9,
-                        nu_bar=2, du=16, dv=2, sigma0=15.90, sigma1=554941.07)
+                        nu_bar=2, du=11, dv=2, sigma0=15.90, sigma1=554941.07)
 

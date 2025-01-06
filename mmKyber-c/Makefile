@@ -21,9 +21,7 @@ CFLAGS	+=	-Wall -Wextra -Wshadow -march=native -O3
 #CFLAGS	+=	-Wall -Wextra -Wshadow -fsanitize=address,undefined -O2 -g
 LDLIBS	+=	-lm
 CFLAGS	+=	-Isym -DMM_$(MODE) -DMM_$(LEVEL) -D$(TEST)
-
-#	for N=1000 benchmarks
-CFLAGS	+=	-DMM_REP_TOT=100000 -DMM_SET_N=1000
+#CFLAGS	+=	-DMM_REP_TOT=102400
 
 $(XBIN): $(OBJS)
 	$(CC) $(CFLAGS) -o $(XBIN) $(OBJS) $(LDLIBS)

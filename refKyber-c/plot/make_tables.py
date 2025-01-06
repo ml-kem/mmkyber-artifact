@@ -89,7 +89,7 @@ for sec in [128, 192, 256]:
 	alg	= [ f'mmKyber-PKE-{sec}', f'mmKyber-KEM-{sec}', f'Kyber{4*sec}' ]
 	lab	= [ f'mmKyber-PKE-{sec}', f'mmKyber-KEM-{sec}', f'ML-KEM-{4*sec}' ]
 	var = [ 'mmEnc()', 'mmEncap()', 'K-PKE.Encrypt()' ]
-	print('\\hline')
+	print('\\midrule')
 	for i in range(3):
 		s	= f'{{\\sf {lab[i]:15} }}'
 		for nn in range(0, 11):

@@ -9,8 +9,8 @@ sk[208] chk 092c360c
 pk[3200] chk 6ef1cf31
 sk[208] chk 68b427d2
 pk[3200] chk 5b4e84c7
-ct_u[1792] chk 11f8adbc
-ct[1952] chk 5b512196
+ct_u[1280] chk 845aea1b
+ct[1440] chk 50f1f575
 k_i[32] chk fccb13b6
 ct_i[32] chk 3ab9c3df
 k_i[32] chk 8057e0f6
@@ -32,8 +32,8 @@ sk[208] chk 092c360c
 pk[3200] chk 6ef1cf31
 sk[208] chk 68b427d2
 pk[3200] chk 5b4e84c7
-ct_u[1792] chk 11f8adbc
-ct[2112] chk 9fe9325d
+ct_u[1280] chk 845aea1b
+ct[1600] chk c6085dbc
 m_i[32] chk a428f60f
 ct_i[64] chk f1070f1e
 m_i[32] chk a0ecd790
@@ -55,8 +55,8 @@ sk[224] chk e1018e8d
 pk[5600] chk 352f025b
 sk[224] chk b3876464
 pk[5600] chk 9be8321c
-ct_u[3360] chk f5812989
-ct[3520] chk 9f68a099
+ct_u[2464] chk 24a97a8d
+ct[2624] chk 25b3d39d
 k_i[32] chk 3976a10e
 ct_i[32] chk b68fffdf
 k_i[32] chk c20363a8
@@ -78,8 +78,8 @@ sk[224] chk e1018e8d
 pk[5600] chk 352f025b
 sk[224] chk b3876464
 pk[5600] chk 9be8321c
-ct_u[3360] chk f5812989
-ct[3680] chk 232177f1
+ct_u[2464] chk 24a97a8d
+ct[2784] chk b8308cf5
 m_i[32] chk a428f60f
 ct_i[64] chk 09595cd1
 m_i[32] chk a0ecd790
@@ -101,8 +101,8 @@ sk[288] chk b87b4665
 pk[7200] chk 3b464f1d
 sk[288] chk 988d6f3e
 pk[7200] chk a5957208
-ct_u[4608] chk 1f0aad10
-ct[4768] chk 60b68468
+ct_u[3168] chk e3d46ac4
+ct[3328] chk 6461fc1c
 k_i[32] chk c95cd47c
 ct_i[32] chk 1d05c4ea
 k_i[32] chk 6e06850f
@@ -124,8 +124,8 @@ sk[288] chk b87b4665
 pk[7200] chk 3b464f1d
 sk[288] chk 988d6f3e
 pk[7200] chk a5957208
-ct_u[4608] chk 1f0aad10
-ct[4928] chk 7a82cd58
+ct_u[3168] chk e3d46ac4
+ct[3488] chk e45cff0c
 m_i[32] chk a428f60f
 ct_i[64] chk 53ba0319
 m_i[32] chk a0ecd790
