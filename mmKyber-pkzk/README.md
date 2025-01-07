@@ -5,7 +5,7 @@ public keys (this counters attacks using maliciously crafted public keys.)
 We use the [LaZer](https://eprint.iacr.org/2024/1846.pdf) implementation
 of LNP22 scheme (see below for references).
 
-The ZK proofs show that the (s,e) secret variables are sampled from the 
+The ZK proofs show that the (s,e) secret variables are sampled from the
 appropriate distribution; either binary {0, 1} or ternary {-1, 0, +1}.
 The ternary case is handled by converting s and e into two binary vectors
 (one for positive and another for negative coefficients), so the ternary
@@ -13,18 +13,18 @@ case has a double-wide witness.
 
 Here are representative numbers with authors laptop (Ryzen 7 7840U.)
 
-| Parameter Set | Dist.	| Proof Size    | Proof time    | Verify time   |
+| Parameter Set | Dist. | Proof Size    | Proof time    | Verify time   |
 |---------------|-------|---------------|---------------|---------------|
-| mmKyber-128   | tern	| 26473 bytes   | 0.078226 sec  | 0.040559 sec  |
-| mmKyber-192   | bin	| 25261 bytes   | 0.075551 sec  | 0.042586 sec  |
-| mmKyber-256   | bin	| 28022 bytes	| 0.105433 sec  | 0.056101 sec  |
+| mmKyber-128   | tern  | 26473 bytes   | 0.078226 sec  | 0.040559 sec  |
+| mmKyber-192   | bin   | 25261 bytes   | 0.075551 sec  | 0.042586 sec  |
+| mmKyber-256   | bin   | 28022 bytes   | 0.105433 sec  | 0.056101 sec  |
 
 Note that mmKyber-KEM and mmKyber-PKE have the same parameter sets
 (keypairs are interchangeable) so these apply to both.
 
 ##  Building and Running
 
-By defaul the code assumes that the 
+By defaul the code assumes that the
 [https://github.com/lazer-crypto/lazer](https://github.com/lazer-crypto/lazer)
 repository is available at
 `../../lazer`, and that C code for mmKyber is at `../mmKyber-c`.

@@ -89,7 +89,7 @@ def poly_cross(v, q2=2*MM_Q):
     return [ ( (4 * x) // q2 ) % 2 for x in v ]
 
 def poly_rec(w, b, q2=2*MM_Q):
-    """ Reconciliation Mechanism, details in Section 2.2. """
+    """ Reconciliation function. Note: Code uses a simplified method. """
 
     #   Bounds for I0 + E
     i0l = ((q2 + 2) // 4) + (q2 // 8) - 1

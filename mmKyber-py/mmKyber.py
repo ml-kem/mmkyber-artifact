@@ -242,10 +242,11 @@ class mmKyber:
         c   = intt(c)
         c   = poly_add(c, y)
 
-        #   invoke equivalent, non-randomized encoding function
-        #return self._fast_enc(c)
+        #   invoke equivalent, non-randomized, constant time encoding function.
+        return self._fast_enc(c)
 
-        #   mmEncap^d continues like this:
+        """
+        #   mmEncap^d continues like this -- equivalent bits with high prob.
 
         #   c~_i <- [ dbl(c_i) ]_{2^{du}}
         c   = poly_dbl(c, xof)
@@ -261,7 +262,7 @@ class mmKyber:
         ct  = poly_serial(u, 1)
         k   = poly_serial(mu, 1)
         return ct, k
-
+        """
 
     #   --- mmKyber:    "Short message" system
 

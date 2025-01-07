@@ -9,6 +9,7 @@ from mmKyber import mmKyber_128, mmKyber_192, mmKyber_256
 if (__name__ == "__main__"):
 
     def dbg_sum(s, lab=''):
+        """ Simple polynomial checksum. """
         x = 1
         for b in s:
             x = (x * 0x103 + b) % (2**32)
