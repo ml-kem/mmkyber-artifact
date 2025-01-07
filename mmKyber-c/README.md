@@ -1,15 +1,14 @@
 #   mmKyber-c
 
-PoC implementation of mmKyber-KEM and mmKyber-PKE in plain C.
+Proof-of-Concept implementation of mmKyber-KEM and mmKyber-PKE in plain C.
 
 
-##  C mplementation characteristics
+##  C Implementation Notes
 
-- Plain C code, no library dependencies or assembly optimization.
-However currently tested only with an x86 Linux. The biggest consumer of
-cycles is the Keccak f1600 function.
+Plain C code, no library dependencies or assembly optimization.
+However -- currently only tested with an x86 Linux.
 
-= Some components (especially Gaussian samplers) are temporary.
+Some components (especially Gaussian samplers) are temporary.
 Furthermore this code is not consistently constant-time, although
 attempt has been made in some places.
 
