@@ -186,7 +186,7 @@ static inline
 void poly_gen_ct_k(uint8_t *ct, uint8_t *k, int32_t *c)
 {
     int i, j;
-    int32_t x, d;
+    int64_t d, x, y;
     uint8_t a, b;
 
     for (i = 0; i < MMKEM_CTI_SZ; i++) {
@@ -194,12 +194,20 @@ void poly_gen_ct_k(uint8_t *ct, uint8_t *k, int32_t *c)
         b = 0;
         for (j = 0; j < 8; j++) {
 
-            x = 4 * c[8 * i + j];
+            //  scale, add a rounding constant
+            //  (2025-01-07; current spec has this middle step)
+            x = (int64_t) c[8 * i + j];
+            x = (x << MM_DU) + (MM_Q / 2l);
 
-            //  divide by q -- constant time
+            //  divide by Q, constant time (x < 2**51)
             d = x >> MM_LOGQ;
-            x -= d * MM_Q;
-            d += ((x - MM_Q) >> 31) + 1;
+            y = x - d * MM_Q;
+            d += y >> MM_LOGQ;
+            y = x - d * MM_Q;
+            d += ((y - MM_Q) >> 31) + 1;
+
+            //  shift again
+            d >>= MM_DU - 2;
 
             a |= (d & 1) << j;
             b |= (((d + 1) >> 1) & 1) << j;

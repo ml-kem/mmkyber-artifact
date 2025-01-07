@@ -216,7 +216,10 @@ class mmKyber:
         k   = bytearray(self.d // 8)
         for i in range(self.d // 8):
             for j in range(8):
-                x = (4 * c[8 * i + j]) // self.q
+                x = c[8 * i + j]
+                #   middle step to mod du
+                x = ((x << self.du) + (self.q // 2)) // self.q
+                x >>= self.du - 2;
                 ct[i] |= (x & 1) << j
                 k[i]  |= (((x + 1) & 3) // 2) << j
         return ct, k
@@ -244,14 +247,15 @@ class mmKyber:
 
         #   mmEncap^d continues like this:
 
-        #   c~_i <- dbl(c_i)
+        #   c~_i <- [ dbl(c_i) ]_{2^{du}}
         c   = poly_dbl(c, xof)
+        c   = poly_compress(c, self.du, 2 * self.q)
 
-        #   u_i <- cross( c~_i mod 2q )(2)
-        u   = poly_cross(c, 2 * self.q)
+        #   u_i <- cross( c~_i mod 2^du)(2)
+        u   = poly_cross(c, 1 << self.du)
 
-        #   mu_i <- [c~_i mod 2q](2)
-        mu  = poly_compress(c, 1, 2 * self.q)
+        #   mu_i <- [c~_i mod 2^du](2)
+        mu  = poly_compress(c, 1, 1 << self.du)
 
         #   return (ct~_i := u_i, K_i := mu_i)
         ct  = poly_serial(u, 1)

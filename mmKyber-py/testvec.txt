@@ -10,13 +10,13 @@ pk[3200] chk 6ef1cf31
 sk[208] chk 68b427d2
 pk[3200] chk 5b4e84c7
 ct_u[1280] chk 845aea1b
-ct[1440] chk 50f1f575
+ct[1440] chk 5a37d8c5
 k_i[32] chk fccb13b6
 ct_i[32] chk 3ab9c3df
 k_i[32] chk 8057e0f6
 ct_i[32] chk 12eed313
-k_i[32] chk 38494ab0
-ct_i[32] chk f158ea97
+k_i[32] chk 2bfdfd20
+ct_i[32] chk bea0bde7
 k_i[32] chk 631dac8a
 ct_i[32] chk 82769370
 k_i[32] chk 432d6a75
@@ -102,7 +102,7 @@ pk[7200] chk 3b464f1d
 sk[288] chk 988d6f3e
 pk[7200] chk a5957208
 ct_u[3168] chk e3d46ac4
-ct[3328] chk 6461fc1c
+ct[3328] chk fb00def8
 k_i[32] chk c95cd47c
 ct_i[32] chk 1d05c4ea
 k_i[32] chk 6e06850f
@@ -112,7 +112,7 @@ ct_i[32] chk 96a34d70
 k_i[32] chk fdca0bba
 ct_i[32] chk 01b1a70e
 k_i[32] chk 351db8ca
-ct_i[32] chk 63956b84
+ct_i[32] chk fa344e60
 === chk mmKyber-PKE-256 N=5
 sk[288] chk 0bc89fd4
 pk[7200] chk 416af26c
