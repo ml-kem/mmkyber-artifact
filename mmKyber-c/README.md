@@ -15,7 +15,9 @@ attempt has been made in some places.
 
 ##  Reproducing benchmarks
 
-A file `bench.txt` is produced by `make bench`.
+A file `bench.txt` is produced by `make bench`. See the file `bench-mm.txt`
+for the data that was used in the paper. Note: overclocking was disabled
+(Intel `echo 1 > /sys/devices/system/cpu/intel_pstate/no_turbo`, AMD: `echo 0 > /sys/devices/system/cpu/cpufreq/boost`.)
 
 
 ##  Functional testing
