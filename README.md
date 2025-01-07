@@ -13,7 +13,7 @@ mmKyber-artifact
 ├── mmKyber-pkzk    # ZK proofs of public key validity with LaZer.
 ├── refKyber-c      # Plain C Kyber ref code for "apples-to-apples" benchmarks.
 ├── pr-fail-dec     # Computation of decryption/decaps failure probabilities.
-├── lattice-sage    # SageMath lattice parameter selection scripts.
+├── param-sage      # SageMath lattice parameter selection/exploration scripts.
 └── README.md       # this file
 ```
 
