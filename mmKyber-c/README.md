@@ -9,17 +9,9 @@ PoC implementation of mmKyber-KEM and mmKyber-PKE in plain C.
 However currently tested only with an x86 Linux. The biggest consumer of
 cycles is the Keccak f1600 function.
 
-= Some components (especially Gaussian samplers) are temporary;
-*work in progress*. Furthermore this code is not consistently constant-time.
-The non-constant time decryption/decapsulation function is about 10%
-faster than the NTT version on some targets; both are provided
-(complile-time flag `MM_NON_CT`.)
-
-Here are benchmarks (cycles and wall-clock seconds) for various parameter
-sets with my laptop, AMD Ryzen 7 7840U, compiled with gcc 14.2.0-8 on
-Linux 6.12.5-1.
-
-**( Insert table and comparisons.)**
+= Some components (especially Gaussian samplers) are temporary.
+Furthermore this code is not consistently constant-time, although
+attempt has been made in some places.
 
 
 ##  Reproducing benchmarks
