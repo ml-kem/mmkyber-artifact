@@ -11,8 +11,9 @@ mmKyber-artifact
 ├── mmKyber-c       # Plain C Implementation of mmKyber. Used for benchmarks.
 ├── mmKyber-py      # Python model for mmKyber, compatible with the C code.
 ├── mmKyber-pkzk    # ZK proofs of public key validity with LaZer.
-├── pr-fail-dec     # Computation of decryption/decaps failure probabilities.
 ├── refKyber-c      # Plain C Kyber ref code for "apples-to-apples" benchmarks.
+├── pr-fail-dec     # Computation of decryption/decaps failure probabilities.
+├── lattice-sage    # SageMath lattice parameter selection scripts.
 └── README.md       # this file
 ```
 
